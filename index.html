@@ -75,7 +75,7 @@
     <input type="number" name="amount" id="amount" placeholder="choose the amount you want">
 
       <label for="select">Select Your Flavor</label>
-                <select class="browser-default custom-select custom-select-md mb-3 name">
+                <select id="flavour" class="browser-default custom-select custom-select-md mb-3 name">
                   <!-- <option> Choose your flavor</option> -->
                   <option value="Chicken pizza">chicken pizza</option>
                   <option value="fruity pizza">fruity pizza</option>
@@ -84,22 +84,25 @@
               
                 </select>
                 <!-- option for choosing size -->
+      
  <label for="size"> choose your size</label>
-   <select>
+   <select id="size">
+
        <option value="large 1200">large 1200</option>
        <option value="medium 800">medium 800</option>
        <option value="small 150">small 150</option>
    </select>
                <!-- option for choosing crust -->
     <label for="select">select your crust </label>
-    <select>
+    <select id="crust">
         <option value="crispy">crispy</option>
         <option value="stuffed">stuffed</option>
         <option value="gluten-free">gluten-free</option>
     </select>
          <!-- option for choosing topping -->
     <label for="select"> select your topping</label>
-    <select>
+    <select id="topping">
+      
         <option value="pepperoni">pepperoni-ksh150</option>
         <option value="mushroom">mushroom-ksh100</option>
         <option value="onion">onion-ksh50</option>
@@ -110,8 +113,8 @@
     <p>when you order your pizza we will deliver the gala to you</p>
     <p>at a very low price.And the awesome thing is you'll taste Awesomeness</p>
     </div>
-    
-     <button type="submit" class="btn btn-orange proceed">submit</button>
+<!--     
+     <button type="submit" class="btn btn-orange proceed">submit</button> -->
               
      </form>
                              </div>
@@ -120,9 +123,9 @@
               </div>
 
   <div class="button">
- <button class="btn btn-orange addPizza">Add Pizza</button>
+ <button class="btn btn-orange addPizza" id="addpizza">Add Pizza</button>
               <button class="btn btn-orange" id="checkout">Checkout</button>
-              <button class="btn btn-orange deliver">Home delivery?</button>
+              <button class="btn btn-orange deliver" id="home delivery">Home delivery?</button>
             
             <div class="delivery">
                 <form action="">
@@ -131,8 +134,8 @@
                     <input type="number" id="phone" class="form-control mb-3" placeholder="enter your Pnone Number">
                     <input type="text" id="location" class="form-control mb-3" placeholder="enter your Location for delivery">
 
-                               <h1>delivery costs ksh200</h1>
-                    <button class="btn btn-orange" id="final-order">Place Order</button>
+                               
+                    <button class="btn btn-orange" id="final-order" onclick="placeorder()">Place Order</button>
 
                   </form>
 
