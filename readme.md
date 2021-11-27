@@ -4,7 +4,7 @@
 ### Description : this web app is very intresting since it allows the user to order the type of pizza they want to be delivered to them at a very low exppense.
  # Setup/Installation Requirements
 follow the link below
- ### https://github.com/stoksociety/week4.git
+ ###  https://github.com/stoksociety/week4.git
 download the app from the website
 extract the files after installation
 open the app and accept the rights and policy
