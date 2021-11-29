@@ -78,6 +78,7 @@ $(document).ready(function () {
     var pizzaSize = $("select#size option:selected").val();
     var pizzaAmount = $("input#amount").val();
     var pizzaCrust = $("select#crust option:selected").val();
+    var locationn = $("#location").val();
 
     function Pizza(size, topping, crust, flavour, amount) {
       this.size = size;
@@ -119,6 +120,12 @@ $(document).ready(function () {
       flavourPrice += 200;
     } else if (pizzaNew.flavour == "fruity pizza" || pizzaNew.flavour == "raspberry pizza") {
       flavourPrice += 100;
+    }
+
+    if (locationn == "") {
+      alert("enter location");
+    } else {
+      alert("your delivery will be sent to," + locationn);
     }
 
     var price = sizePrice + toppingPrice + crustPrice + flavourPrice;
